@@ -18,5 +18,18 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
+	} 
+	
+	post { // define what to after success or failler
+		always { 
+			echo "I run always ok"
+		}
+		success {
+			econ "I run when successfully"
+		}
+		failure {
+			echo "I run when you fail"
+
+		}
 	}
 }
