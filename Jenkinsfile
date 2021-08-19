@@ -25,7 +25,7 @@ pipeline {
 			echo "I run always ok"
 		}
 		success {
-			econ "I run when successfully"
+			echo "I run when successfully"
 		}
 		failure {
 			echo "I run when you fail"
